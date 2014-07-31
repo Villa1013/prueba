@@ -1,0 +1,186 @@
+/*---------------------------------------------------
+* NOMBRE PROYECTO
+* prueba.css
+* Autor: William Villalba - Front-end developer
+============COMENTARIOS============
+* Ancho: 100%
+* Parallax: SI
+* Responsivo: SI
+---------------------------------------------------*/
+
+/*---------------------------------CONTENIDOS------------------------------------------------
+ * IMPORTACIONES.......Estilos de plugin importados
+ * RESET...............Establece los valores iniciales
+ * FUENTES.............Importamos fuentes de iconos y font-face
+ * VARIABLES...........Colores y variables globales a usar
+ * ESTILOS GLOBALES....Estilos body y loading globales
+ * HEADER..............Estilos encabezado de la página
+ * BODY................Estilos body y base de la página
+ * FOOTER..............Estilos pie de página
+/*------------------------------------------------------------------------------------------*/
+
+
+/*--------------------------------IMPORTACIONES---------------------------------------------*/
+@import url('../css/foundation.css');
+@import url('../css/owl.carousel.css');
+/*------------------------------------------------------------------------------------------*/
+
+
+/*----------------------------------------RESET---------------------------------------------*/
+body, div, img dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, button, textarea, p, blockquote, th, td{margin:0; padding:0;}
+table{border-collapse:collapse; border-spacing:0;}
+fieldset, img{border:0;}
+address, caption, cite, code, dfn, em, strong, th, var, optgroup{font-style:inherit; font-weight:inherit;}
+del, ins{text-decoration:none;}
+li{list-style:none;}
+caption, th{text-align:left;}
+h1, h2, h3, h4, h5, h6{font-size:100%; font-weight:normal;}
+q:before, q:after{content:'';}
+abbr, acronym{border:0; font-variant:normal;}
+sup{vertical-align:baseline;}
+sub{vertical-align:baseline;}
+legend{color:#000;}
+input, button, textarea, select, optgroup, option{font-family:inherit; font-size:inherit; font-style:inherit; font-weight:inherit; color:#808285; overflow:hidden; resize:none;}
+*{outline:none}
+img{border:none; padding:0px; margin:0px; display:block;}
+a{text-decoration:none; outline:none !important;}
+ul{list-style:none; margin:0px; padding:0px}
+table{border-collapse:collapse}
+td{padding:0px; margin:0px; border-collapse:collapse}
+.clear {clear: both;}
+*:focus {outline: none;}
+a{text-decoration:none;}
+/*------------------------------------------------------------------------------------------*/
+
+/*----------------------------------------FUENTES-------------------------------------------*/
+/*  Nombre Fuente */
+/*------------------------------------------------------------------------------------------*/
+
+
+/*----------------------------------------VARIABLES-----------------------------------------*/
+.left { float:left;}
+.right { float:right;}
+.border { border:1px solid #F00;}
+.cursiva{font-style:italic}
+.mayuscula { text-transform: uppercase;}
+.negrita { font-weight: bold;}
+.bold{font-weight: bold;}
+.centrar{margin:0 auto; display: block;}
+.over{ overflow: hidden;}
+.centrar-text{text-align: center;}
+.clear{clear: both;}
+.alinear{display: inline-block; vertical-align: top; *display: inline; zoom:1}
+.negro-transparente{background: rgba(0,0,0,0.5);}
+.none{display: none;}
+.block{display: block;}
+.box{box-sizing: border-box;}
+.fixed{position:fixed;}
+.abs{position: absolute;}
+.mw{width: 100%; min-height: 10px;}
+.bg-cajas{background: #f8f8f8;  border-bottom: 2px solid #dbdbdb; box-shadow: 0px 1px 4px 0px #dbdbdb;}
+.inline{ display: inline-block; zoom: 1;}
+@verde:#96d600;
+@verde2:#245462;
+@verde3:#1f535c;
+@verdec:#82ca9c;
+@verdeoval:#95d701;
+@rojo: #e70144;
+@amari:#f9b200;
+@naran:#ff6900;
+@morado:#9d1f5f;
+@azul: #597d9d;
+@azulc:#8bcfd1;
+@gris: #8ea9ae;
+@gris2: #e7e7e7;
+@grisbg:#f6f6f6;
+@blan : #fff;
+@negro:#000;
+@gris3:#4C4C4E;
+@rojo2: #98251d;
+
+/*------------------------------------------------------------------------------------------*/
+
+
+/*------------------------------------ESTILOS GLOBALES--------------------------------------*/
+body { margin: 0px; padding: 0px; font-family: 'brandon_regular'; font-size: 15px; color: #404141; overflow-x: hidden; background: @grisbg;}
+.marco{position: relative; .centrar; max-width: 1000px; width:92%;}
+p{ font-family: 'brandon_regular'; font-size: 15px; margin-bottom: 8px; color:#B4B4B4;}
+.loader {background:url(../images/logo.png) center no-repeat @blan; position: fixed; left: 0; top: 0; z-index: 10000000; width: 100%; height: 100%; display: block; .over; }
+/*------------------------------------------------------------------------------------------*/
+
+/*----------------------------------------HEADER--------------------------------------------*/
+header{ width: 100%; min-height: 10px; background: #eee; position: relative; .box; padding: 10px 0 0 0;
+	.logo{width: 85px; height: 85px;}
+	nav{ width: 100%; text-align: center; 
+		li{ display: inline-block; margin: 20px 0 0 0; position: relative;
+			a{display: block; .box; padding: 3px 10px; font-size: 16px; font-family: sans-serif; color: #000; font-weight: bold;
+				border-bottom: 2px solid #433; transition: all 0.3s ease-out;}
+			a:hover{color: #666; border-bottom: 2px solid #666;}
+			ul{position: absolute; top: 100%; background: #A7A7A7; width: 90px; border-radius: 3px; z-index: 4;
+				li{ margin: 0; .box; padding: 5px 10px;
+					a{ font-size: 14px;  font-weight: normal; display: block; border-bottom: 1px solid #eee;}
+					a:hover{color: #666;}
+				}
+			}
+		}
+	}
+}
+.logo{width: 70px; height:  70px: block; margin: 0px auto auto auto; position: relative; }
+/*------------------------------------------------------------------------------------------*/
+
+
+/*---------------------------------------------SLIDER----------------------------------------*/
+.slider{}
+/*------------------------------------------------------------------------------------------*/
+
+
+/*--------------------------------------------BODY------------------------------------------*/
+.carrusel{width: 100%; height: 300px; position: relative; display: block; border-bottom: 1px solid #eee; border-top: 1px solid #eee;
+margin: 30px 0 40px 0;
+	a li { width: 100%; height: 300px;
+      img{ width: 100%; height: 100%;}
+	} 
+}
+.owl-nav{ top: 48%; width: 100%; position: absolute;
+	.owl-prev{left: 0; position: absolute;}
+	.owl-next{right: 0; position: absolute;}
+}
+/*------------------------------------------------------------------------------------------*/
+
+
+/*--------------------------------------------FOOTER-----------------------------------------*/
+footer{width: 100%; min-height: 10px; background: #eee; position: relative; overflow: hidden; .box; padding: 20px 0; border-top: 2px solid #A7A7A7;
+	.mapa li{ text-align: center;
+		a{color: #000; font-size: 13px; font-family: sans-serif;}
+		a:hover{text-decoration: underline; color: #A7A7A7;}
+	}
+	.redes{text-align: center;
+		li{width: 40px; height: 39px; display: inline-block; transition: all 0.3s ease-out; margin: 30px 0 0 0;}
+		.face{background: url(../images/redes.png) 0px 0px no-repeat;}
+		.face:hover{background: url(../images/redes.png) 0px -51px no-repeat;}
+		.twitter{background: url(../images/redes.png) -43px 0px no-repeat;}
+		.twitter:hover{background: url(../images/redes.png) -43px -51px no-repeat;}
+	}
+}
+/*------------------------------------------------------------------------------------------*/
+
+
+/*------------------------------------PLUGINS------------------------------------------------*/
+/*-Modales-*/
+/*-Top Up-*/
+/*------------------------------------------------------------------------------------------*/
+
+
+/*---------------------------------------------------RESPONSIVE--------------------------------------------------*/
+@media screen and (min-width: 0px) and (max-width: 320px) {
+
+}
+@media all and (min-width: 321px) and (max-width: 600px){
+
+}
+@media all and (min-width: 601px) and (max-width:800px) {
+
+}
+@media all and (min-width: 801px) and (max-width: 1024px) {
+
+}
