@@ -22,7 +22,7 @@
 		 <div class="marco">
 		 	<a href="index.php"><img src="assets/images/logo.png" class="logo"></a>
 		 	 <nav>
-		 	 	<li><a href="">Inicio</a></li>
+		 	 	<li><a href="">Inicio2</a></li>
 		 	 	<li><a href="">Nosotros</a>
 		 	 		<ul>
 		 	 			<li><a href="">Mision</a></li>
